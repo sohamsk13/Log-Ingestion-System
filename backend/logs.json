@@ -1,0 +1,308 @@
+[
+  {
+    "level": "error",
+    "message": "Database connection timeout after 5000ms",
+    "resourceId": "db-primary-01",
+    "timestamp": "2025-07-06T08:37:53.415Z",
+    "traceId": "req-4f8a2d",
+    "spanId": "span-db-conn",
+    "commit": "a1b2c3d4",
+    "metadata": {
+      "parentResourceId": "api-gateway-01",
+      "retryCount": 3,
+      "query": "SELECT * FROM users"
+    }
+  },
+  {
+    "level": "warn",
+    "message": "High memory usage detected (85%)",
+    "resourceId": "worker-node-03",
+    "timestamp": "2025-07-06T08:38:12.201Z",
+    "traceId": "mon-7b3e1f",
+    "spanId": "span-mem-check",
+    "commit": "e5f6g7h8",
+    "metadata": {
+      "parentResourceId": "cluster-manager-01",
+      "currentUsage": "85%",
+      "threshold": "80%"
+    }
+  },
+  {
+    "level": "info",
+    "message": "User login successful",
+    "resourceId": "auth-service-02",
+    "timestamp": "2025-07-06T08:39:45.732Z",
+    "traceId": "req-9c2d5e",
+    "spanId": "span-auth",
+    "commit": "i9j0k1l2",
+    "metadata": {
+      "parentResourceId": "load-balancer-01",
+      "userId": "user-12345",
+      "authMethod": "jwt"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Starting image processing job",
+    "resourceId": "img-processor-04",
+    "timestamp": "2025-07-06T08:40:03.118Z",
+    "traceId": "job-3e4f5a",
+    "spanId": "span-img-proc",
+    "commit": "m3n4o5p6",
+    "metadata": {
+      "parentResourceId": "queue-manager-01",
+      "fileSize": "2.4MB",
+      "format": "JPEG"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Payment processing failed - Invalid CVV",
+    "resourceId": "payment-gateway-01",
+    "timestamp": "2025-07-06T08:41:22.955Z",
+    "traceId": "txn-1b2c3d",
+    "spanId": "span-payment",
+    "commit": "q7r8s9t0",
+    "metadata": {
+      "parentResourceId": "checkout-service-01",
+      "transactionId": "txn-789012",
+      "amount": "49.99",
+      "currency": "USD"
+    }
+  },
+  {
+    "level": "info",
+    "message": "Cache hit for product details",
+    "resourceId": "redis-cache-01",
+    "timestamp": "2025-07-06T08:42:15.332Z",
+    "traceId": "req-6d7e8f",
+    "spanId": "span-cache",
+    "commit": "u1v2w3x4",
+    "metadata": {
+      "parentResourceId": "product-service-01",
+      "productId": "prod-67890",
+      "responseTime": "12ms"
+    }
+  },
+  {
+    "level": "warn",
+    "message": "Slow database query detected (1200ms)",
+    "resourceId": "db-replica-02",
+    "timestamp": "2025-07-06T08:43:36.601Z",
+    "traceId": "req-0a9b8c",
+    "spanId": "span-db-query",
+    "commit": "y5z6a7b8",
+    "metadata": {
+      "parentResourceId": "report-service-01",
+      "queryDuration": "1200ms",
+      "table": "order_history"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Failed to send email notification",
+    "resourceId": "email-service-03",
+    "timestamp": "2025-07-06T08:44:52.887Z",
+    "traceId": "job-7c8d9e",
+    "spanId": "span-email",
+    "commit": "c9d0e1f2",
+    "metadata": {
+      "parentResourceId": "notification-service-01",
+      "recipient": "user@example.com",
+      "error": "SMTP connection refused"
+    }
+  },
+  {
+    "level": "info",
+    "message": "New user registration completed",
+    "resourceId": "user-service-01",
+    "timestamp": "2025-07-06T08:45:33.224Z",
+    "traceId": "req-3f4g5h",
+    "spanId": "span-register",
+    "commit": "g3h4i5j6",
+    "metadata": {
+      "parentResourceId": "api-gateway-01",
+      "userId": "user-67890",
+      "method": "OAuth"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Starting daily backup job",
+    "resourceId": "backup-service-01",
+    "timestamp": "2025-07-06T08:46:17.459Z",
+    "traceId": "job-2k3l4m",
+    "spanId": "span-backup",
+    "commit": "k7l8m9n0",
+    "metadata": {
+      "parentResourceId": "scheduler-01",
+      "target": "user-database",
+      "estimatedSize": "24GB"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Third-party API rate limit exceeded",
+    "resourceId": "integration-service-02",
+    "timestamp": "2025-07-06T08:47:45.112Z",
+    "traceId": "req-5n6o7p",
+    "spanId": "span-api-call",
+    "commit": "o1p2q3r4",
+    "metadata": {
+      "parentResourceId": "payment-service-01",
+      "apiEndpoint": "https://api.paymentprocessor.com/v1/charges",
+      "retryAfter": "60s"
+    }
+  },
+  {
+    "level": "warn",
+    "message": "Deprecated API endpoint called",
+    "resourceId": "api-gateway-01",
+    "timestamp": "2025-07-06T08:48:30.776Z",
+    "traceId": "req-8q9r0s",
+    "spanId": "span-api-gateway",
+    "commit": "s5t6u7v8",
+    "metadata": {
+      "parentResourceId": "load-balancer-01",
+      "endpoint": "/v1/old-endpoint",
+      "clientIP": "192.168.1.45"
+    }
+  },
+  {
+    "level": "info",
+    "message": "Inventory stock level updated",
+    "resourceId": "inventory-service-01",
+    "timestamp": "2025-07-06T08:49:18.993Z",
+    "traceId": "req-1t2u3v",
+    "spanId": "span-inventory",
+    "commit": "w9x0y1z2",
+    "metadata": {
+      "parentResourceId": "order-service-01",
+      "productId": "prod-34567",
+      "newQuantity": 42
+    }
+  },
+  {
+    "level": "debug",
+    "message": "JWT token validation started",
+    "resourceId": "auth-service-01",
+    "timestamp": "2025-07-06T08:50:05.334Z",
+    "traceId": "req-4w5x6y",
+    "spanId": "span-auth",
+    "commit": "a3b4c5d6",
+    "metadata": {
+      "parentResourceId": "api-gateway-01",
+      "tokenIssuer": "auth0",
+      "algorithm": "RS256"
+    }
+  },
+  {
+    "level": "error",
+    "message": "File upload failed - Size exceeds limit",
+    "resourceId": "storage-service-01",
+    "timestamp": "2025-07-06T08:51:22.667Z",
+    "traceId": "req-7z8a9b",
+    "spanId": "span-upload",
+    "commit": "e7f8g9h0",
+    "metadata": {
+      "parentResourceId": "web-app-01",
+      "fileName": "presentation.pdf",
+      "size": "25MB",
+      "limit": "20MB"
+    }
+  },
+  {
+    "level": "info",
+    "message": "Scheduled maintenance started",
+    "resourceId": "cluster-manager-01",
+    "timestamp": "2025-07-06T08:52:10.445Z",
+    "traceId": "job-0c1d2e",
+    "spanId": "span-maintenance",
+    "commit": "i1j2k3l4",
+    "metadata": {
+      "parentResourceId": "monitoring-01",
+      "duration": "30m",
+      "affectedServices": [
+        "db-primary",
+        "cache"
+      ]
+    }
+  },
+  {
+    "level": "warn",
+    "message": "Unusual login attempt detected",
+    "resourceId": "security-service-01",
+    "timestamp": "2025-07-06T08:53:48.112Z",
+    "traceId": "req-3f4g5h",
+    "spanId": "span-security",
+    "commit": "m5n6o7p8",
+    "metadata": {
+      "parentResourceId": "auth-service-01",
+      "userId": "user-45678",
+      "location": "Unknown",
+      "device": "Mobile"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Starting data export job",
+    "resourceId": "etl-service-01",
+    "timestamp": "2025-07-06T08:54:33.889Z",
+    "traceId": "job-9q0r1s",
+    "spanId": "span-etl",
+    "commit": "q9r0s1t2",
+    "metadata": {
+      "parentResourceId": "scheduler-01",
+      "recordsProcessed": 0,
+      "destination": "S3 bucket"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Order processing failed - Insufficient inventory",
+    "resourceId": "order-service-01",
+    "timestamp": "2025-07-06T08:55:47.223Z",
+    "traceId": "req-2t3u4v",
+    "spanId": "span-order",
+    "commit": "u3v4w5x6",
+    "metadata": {
+      "parentResourceId": "api-gateway-01",
+      "orderId": "ord-78901",
+      "productId": "prod-23456",
+      "requested": 5,
+      "available": 3
+    }
+  },
+  {
+    "level": "info",
+    "message": "CDN cache purged successfully",
+    "resourceId": "cdn-service-01",
+    "timestamp": "2025-07-06T08:56:32.556Z",
+    "traceId": "job-5w6x7y",
+    "spanId": "span-cdn",
+    "commit": "y7z8a9b0",
+    "metadata": {
+      "parentResourceId": "deploy-service-01",
+      "paths": [
+        "/static/*",
+        "/images/*"
+      ],
+      "zones": [
+        "US",
+        "EU"
+      ]
+    }
+  },
+  {
+    "level": "error",
+    "message": "Debug the error above",
+    "resourceId": "34",
+    "timestamp": "2025-07-06T09:26:48.967Z",
+    "traceId": "879",
+    "spanId": "34",
+    "commit": "Hash",
+    "metadata": {
+      "parentResourceId": ""
+    }
+  }
+]
