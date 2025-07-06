@@ -6,7 +6,8 @@
 
 A **professional-grade log management system** designed to ingest, store, and search log data efficiently with an intuitive UI for developers.
 
-![image](https://github.com/user-attachments/assets/5200e096-198e-4df2-8bf8-9ea9d603da1b)
+![image](https://github.com/user-attachments/assets/db9b1783-1c5f-44b4-9acf-e62ed2818aa7)
+
 
 
 ---
